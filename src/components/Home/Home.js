@@ -4,11 +4,14 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import Projects from "../Projects/Projects";
+import About from "../About/About";
 
 function Home() {
   return (
+    <>
     <section>
-      <Container fluid className="home-section" id="home">
+      <Container fluid className="home-section" id="Home">
         <Particle />
         <Container className="home-content">
           <Row>
@@ -43,6 +46,9 @@ function Home() {
       </Container>
       <Home2 />
     </section>
+    <About />
+    <Projects />
+    </>
   );
 }
 
